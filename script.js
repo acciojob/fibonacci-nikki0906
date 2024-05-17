@@ -4,16 +4,13 @@ function fibonacci(num) {
 	if (num === 0) return 0;
     if (num === 1) return 1;
 
-    let prev = 0;
-    let curr = 1;
-
+    let a = 0, b = 1;
     for (let i = 2; i <= num; i++) {
-        let next = prev + curr;
-        prev = curr;
-        curr = next;
+        let temp = a + b;
+        a = b;
+        b = temp;
     }
-
-    return prev;
+    return b;
 }
 console.log(fibonacci(1)); // Output: 0
 console.log(fibonacci(5)); // Output: 3
