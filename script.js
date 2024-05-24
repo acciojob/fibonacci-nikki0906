@@ -13,7 +13,7 @@ function fibonacci(num) {
         prev = curr;
         curr = next;
     }
-    return prev;
+    return curr;
 }
 console.log(fibonacci(1)); // Output: 0
 console.log(fibonacci(5)); // Output: 3
