@@ -9,7 +9,7 @@ function fibonacci(num) {
 	let next = 0;
 	
     for (let i = 2; i <= num; i++) {
-        next = prev + curr;
+        let next = prev + curr;
         prev = curr;
         curr = next;
     }
