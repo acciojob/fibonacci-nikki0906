@@ -6,13 +6,14 @@ function fibonacci(num) {
 
     let prev = 0;
 	let curr = 1;
+	let next = 0;
 	
     for (let i = 2; i <= num; i++) {
         let next = prev + curr;
         prev = curr;
         curr = next;
     }
-    return prev;
+    return next;
 }
 console.log(fibonacci(1)); // Output: 0
 console.log(fibonacci(5)); // Output: 3
